@@ -1,0 +1,83 @@
+{
+  "ohmlab": true,
+  "version": 1,
+  "savedAt": "2026-06-11T20:18:20.628Z",
+  "circuit": {
+    "components": [
+      {
+        "id": "31552485-9f1f-4c7d-920b-a28dffe31f69",
+        "type": "resistor",
+        "x": 292.5,
+        "y": 183.5,
+        "value": 1000,
+        "label": "1000Ω",
+        "rotation": 0
+      },
+      {
+        "id": "d2de65bd-3bee-484e-b25d-3bd909fd9907",
+        "type": "voltage-source",
+        "x": 120.5,
+        "y": 222.5,
+        "value": 9,
+        "label": "9V",
+        "rotation": 1
+      },
+      {
+        "id": "41ba3eb0-d03d-4cb2-8595-1403865d695f",
+        "type": "led",
+        "x": 161.5,
+        "y": 330.5,
+        "value": 2,
+        "label": "LED 2V",
+        "rotation": 0,
+        "color": "red",
+        "_conducting": false,
+        "_needsIter": false
+      },
+      {
+        "id": "34ae35ea-a0dc-4bef-b69d-c28382360cd6",
+        "type": "switch",
+        "x": 333.5,
+        "y": 290.5,
+        "value": 0,
+        "label": "SW",
+        "rotation": 3,
+        "state": "open"
+      }
+    ],
+    "wires": [
+      {
+        "id": "ac6b8a67-a21e-4d8a-9608-814d3dead036",
+        "startComponentId": "d2de65bd-3bee-484e-b25d-3bd909fd9907",
+        "startNodeId": 1,
+        "endComponentId": "31552485-9f1f-4c7d-920b-a28dffe31f69",
+        "endNodeId": 0,
+        "waypoints": []
+      },
+      {
+        "id": "ce382946-5d8a-45af-b0fc-7f242c0c1890",
+        "startComponentId": "31552485-9f1f-4c7d-920b-a28dffe31f69",
+        "startNodeId": 1,
+        "endComponentId": "34ae35ea-a0dc-4bef-b69d-c28382360cd6",
+        "endNodeId": 0,
+        "waypoints": []
+      },
+      {
+        "id": "31c96f9a-aa92-4439-8815-7dbb21935593",
+        "startComponentId": "34ae35ea-a0dc-4bef-b69d-c28382360cd6",
+        "startNodeId": 1,
+        "endComponentId": "41ba3eb0-d03d-4cb2-8595-1403865d695f",
+        "endNodeId": 1,
+        "waypoints": []
+      },
+      {
+        "id": "9c737b20-57be-43cd-83b8-fc8cf9139591",
+        "startComponentId": "41ba3eb0-d03d-4cb2-8595-1403865d695f",
+        "startNodeId": 0,
+        "endComponentId": "d2de65bd-3bee-484e-b25d-3bd909fd9907",
+        "endNodeId": 0,
+        "waypoints": []
+      }
+    ]
+  }
+}
